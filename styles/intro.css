@@ -1,0 +1,27 @@
+.surname
+{
+    color: rgb(255, 255, 255);
+    font-size: 5.5rem;
+}
+
+#degree-container 
+{
+    display: flex;
+}
+
+#degree
+{
+    white-space: nowrap;
+    padding-top: 30px;
+    padding-left: 5px;
+}
+
+#degree span{
+    color: rgba(190, 190, 190, 0.479);
+}
+
+#astro
+{
+    color: rgba(255, 255, 255, 0.959);
+    font-size: 3rem;
+}

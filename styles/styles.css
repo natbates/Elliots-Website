@@ -1,0 +1,97 @@
+@import url("../styles/intro.css");
+@import url("../styles/nav.css");
+@import url("../styles/about.css");
+@import url("../styles/cv.css");
+@import url("../styles/portfolio.css");
+@import url("../styles/contact.css");
+
+:root
+{
+    --dark-colour: #000000;
+    --light-colour: #FFFFFF;
+}
+
+body
+{
+    background-color: #000000;
+    height: 500vh;
+}
+
+#background
+{
+    height: 100vh;
+    background: url("../images/WorldImage.jpg") no-repeat center center / cover;
+}
+
+h1, h2, h3, h4, h4, p, a, span
+{
+    font-family: "BebasNeue", sans-serif;
+}
+
+#content
+{
+    padding-top: 195px;
+    padding-left: 80px;
+    transition: padding-left 0.3s ease;
+}
+
+.information
+{
+    border: #ffffff0a 2px dotted;
+    height: 80%;
+    width: 97.1%;
+    margin-bottom: 200px;
+}
+
+.information p
+{
+    font-size: 2rem;
+    color: rgb(105, 105, 105);
+}
+
+.title
+{
+    color: rgb(255, 255, 255);
+    font-size: 5.5rem;
+    padding-right: 15px;
+}   
+
+#title-container 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#title h1
+{
+    font-weight: bold !important;
+}
+
+@keyframes flyIn {
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(0%);
+    }
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+@media screen and (max-width: 390px)
+{
+    #nav-bar{
+        display: none;
+    }
+
+    #content{
+        padding-left: 20px;
+        transform: scale(0.7) translateX(-20%);
+    }
+
+}
